@@ -1,0 +1,88 @@
+body {
+   margin: 0;
+   font-family: system-ui, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+header {
+   background: linear-gradient(#010132, #1a3460);   
+   overflow: hidden;
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 37%);
+   backdrop-filter: blur(15px);
+   color: #eaedf7;
+   text-align: center;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+   background: url(/imgs/image\ \(2\).jpg) no-repeat center;
+   background-size: cover;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 3em;
+}
+
+.menu {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 2.5em;
+   background: rgba(255, 255, 255, 24%);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 37%);
+   backdrop-filter: blur(15px);
+   border: 1px solid rgba(255, 255, 255, 0.18);
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   text-align: center;
+}
+
+.menu a {
+   text-decoration: none;
+   color: #0833e0;
+}
+
+.menu h3 {
+   color: #0833e0;
+   margin: 0.4em 0 0 0;
+}
+
+.menu span {
+   font-size: 3em;
+}
+
+.menu > div {
+   margin: 0.2em;
+}
+
+.menu > div a {
+   width: 100%;
+   height: 100%;
+   padding: 1.5em;
+   background: rgba(255, 255, 255, 0.2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: 0.2s;
+}
+
+.menu > div:hover a {
+   background: rgba(255, 255, 255, 0.5);
+   transform: scale(1.1);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 37%);
+   color: #0833e0;
+}
+
+@media screen and (max-width: 900px) {
+   .menu {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+@media screen and (max-width: 550px) {
+   .menu {
+      grid-template-columns: 1fr;
+   }
+}
